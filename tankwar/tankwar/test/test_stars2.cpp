@@ -84,7 +84,7 @@ void Star::init()
 
 	for (int i = 0; i < 3; i++)
 	{
-		m_step = (rand() % 5000) / 1000.0 + 25;
+		m_step = (rand() % 5000) / 1000.0 + 1;
 		m_color = (int)(m_step * 255 / 6.0 + 0.5);
 		color[i] = m_color;
 	}
@@ -127,13 +127,18 @@ void Star::move()
 
 void RectStar::draw()
 {
-	setfillcolor(m_color);
-	fillrectangle(m_x, m_y, m_x + 3, m_y + 3);
+	//setfillcolor(m_color);
+	//fillrectangle(m_x, m_y, m_x + 3, m_y + 3);
+	setbkcolor(m_color);
+	RECT r = {m_x, m_y, m_x + 30, m_y + 30};
+	drawtext(_T("Hello World"), &r, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 }
 
 void RectStar::remove()
 {
-	clearrectangle(m_x, m_y, m_x +4, m_y + 3);
+	//clearrectangle(m_x, m_y, m_x +4, m_y + 3);
+	setfillcolor(BLACK);
+	fillrectangle(m_x, m_y, m_x + 30, m_y + 30);
 }
 
 int main()
@@ -149,6 +154,7 @@ int main()
 	{
 		star[i].init();
 		rstar[i].init();
+		
 	}
 
 	while (!_kbhit())
