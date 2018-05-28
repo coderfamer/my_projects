@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="test_console.cpp" />
     <ClCompile Include="text_attributes.cpp" />
   </ItemGroup>

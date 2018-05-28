@@ -11,24 +11,27 @@
     <Filter Include="Snake\src">
       <UniqueIdentifier>{6078c579-e2ba-4e2b-9c78-2f56909ae45b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Snake\src\test">
-      <UniqueIdentifier>{41057a77-42e1-4ed4-a723-d333b3e74c05}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Snake\src\doc">
+    <Filter Include="Snake\doc">
       <UniqueIdentifier>{0f002ff3-68d0-40e7-8c76-13260bc96fab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Snake\test">
+      <UniqueIdentifier>{41057a77-42e1-4ed4-a723-d333b3e74c05}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test_console.cpp">
-      <Filter>Snake\src\test</Filter>
+      <Filter>Snake\test</Filter>
     </ClCompile>
     <ClCompile Include="text_attributes.cpp">
-      <Filter>Snake\src\test</Filter>
+      <Filter>Snake\test</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Snake\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt">
-      <Filter>Snake\src\doc</Filter>
+      <Filter>Snake\doc</Filter>
     </Text>
   </ItemGroup>
 </Project>

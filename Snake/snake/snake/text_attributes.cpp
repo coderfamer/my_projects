@@ -5,7 +5,7 @@
 using std::cout;
 using std::endl;
 
-int main()
+int main_attribute()
 {
 	HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
 
