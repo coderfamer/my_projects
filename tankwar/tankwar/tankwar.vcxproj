@@ -82,6 +82,7 @@
     <ClCompile Include="test\test_stars.cpp" />
     <ClCompile Include="test\test_stars1.cpp" />
     <ClCompile Include="test\test_stars2.cpp" />
+    <ClCompile Include="test\test_stars3.cpp" />
     <ClCompile Include="test\test_wawa.cpp" />
   </ItemGroup>
   <ItemGroup>

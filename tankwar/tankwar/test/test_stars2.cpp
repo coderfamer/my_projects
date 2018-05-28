@@ -1,3 +1,4 @@
+
 #include <graphics.h>
 #include <conio.h>
 #include <iostream>
@@ -21,12 +22,41 @@ protected:
 	void newpos();
 	void remove();
 
-private:
+//private:
 	double m_x;
 	int m_y;
 	double m_step;
 	int m_color;
 };
+
+class RectStar : public Star
+{
+public:
+	RectStar();
+	~RectStar();
+
+	void move()
+	{
+		remove();
+		newpos();
+		draw();
+	}
+protected:
+	void draw();
+	void remove();
+private:
+
+};
+
+
+
+RectStar::RectStar()
+{
+}
+
+RectStar::~RectStar()
+{
+}
 
 Star::Star()  : m_x(0)
 {
@@ -48,9 +78,19 @@ void Star::init()
 	}
 
 	m_y = rand() % SCREEN_HEIGHT;
-	m_step = (rand() % 5000) / 1000.0 + 1;
-	m_color = (int)(m_step * 255 / 6.0 + 0.5);
-	m_color = RGB(m_color, m_color, m_color);
+	
+
+	int color[3];
+
+	for (int i = 0; i < 3; i++)
+	{
+		m_step = (rand() % 5000) / 1000.0 + 25;
+		m_color = (int)(m_step * 255 / 6.0 + 0.5);
+		color[i] = m_color;
+	}
+
+	
+	m_color = RGB(color[0], color[1], color[2]);
 }
 
 void Star::draw()
@@ -73,7 +113,7 @@ void Star::remove()
 {
 	putpixel((int)m_x, m_y, 0);
 	setcolor(0);
-	circle((int)m_x, m_y, 10);
+	circle((int)m_x, m_y, 1);
 }
 
 void Star::move()
@@ -85,6 +125,17 @@ void Star::move()
 	draw();
 }
 
+void RectStar::draw()
+{
+	setfillcolor(m_color);
+	fillrectangle(m_x, m_y, m_x + 3, m_y + 3);
+}
+
+void RectStar::remove()
+{
+	clearrectangle(m_x, m_y, m_x +4, m_y + 3);
+}
+
 int main()
 {
 	srand((unsigned)time(NULL));
@@ -92,10 +143,12 @@ int main()
 	initgraph(SCREEN_WIDTH, SCREEN_HEIGHT);
 
 	Star star[MAXSTAR];
+	RectStar rstar[MAXSTAR];
 
 	for (int i = 0; i < MAXSTAR; i++)
 	{
 		star[i].init();
+		rstar[i].init();
 	}
 
 	while (!_kbhit())
@@ -103,6 +156,7 @@ int main()
 		for (int i = 0; i < MAXSTAR; i++)
 		{
 			star[i].move();
+			rstar[i].move();
 		}
 		Sleep(30);
 	}
