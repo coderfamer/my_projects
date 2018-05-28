@@ -80,6 +80,8 @@
   <ItemGroup>
     <ClCompile Include="test\test.cpp" />
     <ClCompile Include="test\test_stars.cpp" />
+    <ClCompile Include="test\test_stars1.cpp" />
+    <ClCompile Include="test\test_stars2.cpp" />
     <ClCompile Include="test\test_wawa.cpp" />
   </ItemGroup>
   <ItemGroup>

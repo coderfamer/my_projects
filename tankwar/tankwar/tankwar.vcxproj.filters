@@ -27,6 +27,12 @@
     <ClCompile Include="test\test_stars.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="test\test_stars1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test_stars2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="doc\ziyuan.txt" />

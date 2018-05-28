@@ -3,6 +3,8 @@
 #include <conio.h>
 #include <time.h>
 
+
+
 #define MAXSTARS 2000 //ÐÇÐÇ×ÜÊý
 
 struct  STARS
@@ -38,7 +40,7 @@ void move_stars(int i)
 	putpixel((int)stars[i].x, stars[i].y, stars[i].color);
 }
 
-int main()
+int main_stars()
 {
 	srand((unsigned)time(NULL));
 	initgraph(640, 480);
@@ -50,7 +52,7 @@ int main()
 		stars[i].x = rand() % 640;
 	}
 
-	while (!_kbhit())
+	while (/*!_kbhit()*/true)
 	{
 		for (int i = 0; i < MAXSTARS; i++)
 		{
