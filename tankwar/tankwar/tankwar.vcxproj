@@ -78,6 +78,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="test\move_cube.cpp" />
     <ClCompile Include="test\test.cpp" />
     <ClCompile Include="test\test_stars.cpp" />
     <ClCompile Include="test\test_stars1.cpp" />
