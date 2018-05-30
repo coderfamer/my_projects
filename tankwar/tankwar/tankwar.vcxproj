@@ -78,6 +78,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\graphic.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\maintank.cpp" />
+    <ClCompile Include="src\model\point.cpp" />
+    <ClCompile Include="src\model\rect.cpp" />
     <ClCompile Include="test\move_cube.cpp" />
     <ClCompile Include="test\test.cpp" />
     <ClCompile Include="test\test_stars.cpp" />
@@ -88,6 +93,13 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="doc\ziyuan.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\graphic.h" />
+    <ClInclude Include="src\maintank.h" />
+    <ClInclude Include="src\model\point.h" />
+    <ClInclude Include="src\model\rect.h" />
+    <ClInclude Include="src\tank.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

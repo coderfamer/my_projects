@@ -6,7 +6,7 @@
 void block(int length);
 void strong_block();
 
-int main()
+int main_cube()
 {
 	strong_block();
 
@@ -67,12 +67,7 @@ void strong_block()
 		}
 	}
 
-	//int length = 100;
-	//float H, S, L;
-	//H = 0;
-	//S = 1;
-	//L = 0.5;
-	//block(length, HSLtoRGB(H, S, L));
+
 	_getch();
 	closegraph();
 }
