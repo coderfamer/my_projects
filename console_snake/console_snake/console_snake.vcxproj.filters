@@ -15,11 +15,17 @@
     <ClInclude Include="public.h">
       <Filter>common</Filter>
     </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>snake</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="graph.cpp">
       <Filter>snake</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Node.cpp">
+      <Filter>snake</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
