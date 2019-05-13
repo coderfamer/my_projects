@@ -6,6 +6,7 @@ public:
 	FileServer() : port(123456);
 	bool init_socket();
 	bool bind_socket();
+	bool do_recieve();
 	~FileServer();
 protected:
 private:

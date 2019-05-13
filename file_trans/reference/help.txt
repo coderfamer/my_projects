@@ -1,0 +1,7 @@
+多线程socket
+https://stackoverflow.com/questions/41023466/c-creating-multiple-socket-clients
+https://stackoverflow.com/questions/12471761/creating-multiple-tcp-socket-connections
+
+生产者消费者
+https://codereview.stackexchange.com/questions/199917/generic-producer-consumer-in-c11
+http://www.voidcn.com/article/p-nimuriir-brr.html

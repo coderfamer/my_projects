@@ -58,6 +58,20 @@ bool FileServer::do_recieve()
 			perror("connect error!!");
 			exit(1);
 		}
+		close(serv_fd);
+
+		if (recv(connfd, filename, BUFFER_SIZE, 0) == -1){
+			perror("Can't receive filename");
+			exit(1);
+		}
+
+		FILE *fp = fopen(filename, "wb");
+		if (fp == NULL){
+			perror("Can't open file");
+			exit(1);
+		}
+
+		char 
 	}
 }
 
