@@ -1,0 +1,3 @@
+windows cmake构建
+    cmake -G "MinGW Makefiles" .
+    mingw32-make
