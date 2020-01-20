@@ -1,0 +1,1 @@
+/usr/bin/g++  -g    -rdynamic CMakeFiles/picture.dir/test.cpp.o  -o picture  -L/root/my_projects/picture/lib -Wl,-rpath,/root/my_projects/picture/lib -lexiv2 
