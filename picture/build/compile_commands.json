@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/root/my_projects/picture/build",
-  "command": "/usr/bin/g++   -I/root/my_projects/picture/include  -g   -std=c++11 -o CMakeFiles/picture.dir/test.cpp.o -c /root/my_projects/picture/test.cpp",
-  "file": "/root/my_projects/picture/test.cpp"
-}
-]

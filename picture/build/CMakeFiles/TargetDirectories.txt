@@ -1,3 +1,0 @@
-/root/my_projects/picture/build/CMakeFiles/rebuild_cache.dir
-/root/my_projects/picture/build/CMakeFiles/edit_cache.dir
-/root/my_projects/picture/build/CMakeFiles/picture.dir
